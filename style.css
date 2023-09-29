@@ -1,39 +1,162 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
-    background-color: #add8e6;
     color: #023047;
+    display: flex;
+    flex-direction: column;
+    background-color: #add8e6;
+    height: 100vh;  
+}
+
+main{
+    margin-top: 2em;
+}
+
+.cultuur {
+    display: flex;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #e9eaec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cultuur div {
+    width: 47%;
+}
+
+.cultuur div:first-of-type {
+    flex-wrap: wrap;
+}
+
+.cultuur div:first-of-type img {
+    width: 49%;
+}
+
+.cultuur p{
+    margin-bottom: 1em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about div{
+    width: 30%;
+    height: 100%;
+    background-color: #e9eaec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 4.5rem;
+}
+
+.about div ol{
+    padding-left: 2em;
+}
+
+.about img{
+    width: 100%;
+}
+
+.about p{
+    margin-bottom: 1em;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.parallax{
+    background-image: url(/images/roemeensevlag2.jpg);
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    border: 1em;
+    color:#fbfbfb;
+    background-color: #023047;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    top: auto;
 }
 
 h1{
     text-align: center;
-    /* background-color: #023047; */
-    color: #023047;
+    /* color: #023047;
+    background-color: #add8e6; */
+    background-image: linear-gradient(-350deg,blue 0%,yellow 40%,red 80%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
 
+@keyframes textclip {
+    to { 
+        background-position: 200% center;
+    }
+}
+
+ul{
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+}
+ 
+li a{
+    display: block;
+    color: #023047;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+li a:hover {
+    color: #add8e6;
+    background-color: #023047;
+    border-radius: 10%;
+} 
+
+.welkomtekst{
+    margin-top: 5em ;
+    margin-left: 20em;
+    margin-right: 20em;
+    margin-bottom: 5em;
+    background-color: #e9eaec;
+    border-color: #023047;
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 nav{
-    text-align: center;
-    background-color: #023047; 
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-ul li {
-    display: inline;
-    margin-right: 20px;
+nav .logo{
+    max-width: 4%;
+    max-height: 4%;
+    padding: 1em;
 }
-
-
-
-li a:hover {
-    background-color: #add8e6;
-    padding: 2px;
-}
-
