@@ -13,16 +13,128 @@ body{
     height: 100vh;  
 }
 
+/* Start van Nav */
+ 
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+}
+
+li a{
+    display: block;
+    color: #023047;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+li a:hover {
+    color: #add8e6;
+    background-color: #023047;
+    border-radius: 10%;
+} 
+
+nav .logo{
+    max-width: 4%;
+    max-height: 4%;
+    padding: 1rem;
+}
+
+/* Einde van Nav */
+
+/* Begin van Main */
+
 main{
-    margin-top: 2em;
+    margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+    background-image: linear-gradient(-355deg,blue 0%,yellow 40%,red 80%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 9s linear infinite;
+}
+
+@keyframes textclip {
+    to { 
+        background-position: 200% center;
+    }
+}
+
+.bewegendevlag{
+    background-image: url(/images/roemeensevlag2.jpg);
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welkomtekst{
+    margin-top: 5rem ;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    margin-bottom: 5rem;
+    background-color: #e9eaec;
+    border-color: #023047;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about div{
+    width: 30%;
+    height: 100%;
+    background-color: #e9eaec;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;    
+    margin-bottom: 4.5rem;
+}
+
+.about div ol{
+    padding-left: 2rem;
+}
+
+.about img{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.about p{
+    margin-bottom: 1rem;
+}
+
+.about h2{
+    text-align: center;
 }
 
 .cultuur {
     display: flex;
-    margin-left: 5em;
-    margin-right: 5em;
-    margin-bottom: 1em;
-    padding: 1em;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
     background-color: #e9eaec;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -40,123 +152,69 @@ main{
 }
 
 .cultuur p{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
-.about {
+.bezienswaardigheden{
     display: flex;
     justify-content: space-between;
-}
-
-.about div{
-    width: 30%;
-    height: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;    
+    margin-bottom: 3rem;
     background-color: #e9eaec;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1em;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 4.5rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
 }
 
-.about div ol{
-    padding-left: 2em;
-}
-
-.about img{
+.bezienswaardigheden img{
+    height: 100%;
     width: 100%;
+    padding: 2em;
 }
 
-.about p{
-    margin-bottom: 1em;
+.bezienswaardigheden div{
+    width: 25%;
 }
 
-.about h2{
+.beztekst {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+    background-color: #ffffffbe;
+    color: #023047;
+    padding: 3rem;
+    padding-top: 4rem;
+}
+
+.bezcontainer {
+    position: relative;
+  }
+
+  .bezcontainer:hover .beztekst {
+    opacity: 1;
+  }
+
+  .bezcontainer h2 {
     text-align: center;
-}
+  }
 
-.parallax{
-    background-image: url(/images/roemeensevlag2.jpg);
-    min-height: 550px;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Einde van Main */
+
+/* Begin van Footer */
 
 footer{
-    border: 1em;
+    border: 1rem;
     color:#fbfbfb;
     background-color: #023047;
     text-align: center;
     display: flex;
     justify-content: space-around;
-    top: auto;
+    top: auto;  
 }
 
-h1{
-    text-align: center;
-    /* color: #023047;
-    background-color: #add8e6; */
-    background-image: linear-gradient(-350deg,blue 0%,yellow 40%,red 80%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-}
-
-@keyframes textclip {
-    to { 
-        background-position: 200% center;
-    }
-}
-
-ul{
-    justify-content: center;
-    list-style-type: none;
-    display: flex;
-}
- 
-li a{
-    display: block;
-    color: #023047;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 1em;
-}
-
-li a:hover {
-    color: #add8e6;
-    background-color: #023047;
-    border-radius: 10%;
-} 
-
-.welkomtekst{
-    margin-top: 5em ;
-    margin-left: 20em;
-    margin-right: 20em;
-    margin-bottom: 5em;
-    background-color: #e9eaec;
-    border-color: #023047;
-    padding: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav .logo{
-    max-width: 4%;
-    max-height: 4%;
-    padding: 1em;
-}
+/* Einde van Footer */
