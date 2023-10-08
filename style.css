@@ -75,6 +75,8 @@ h1{
     }
 }
 
+/* Begin Index Pagina */
+
 .bewegendevlag{
     background-image: url(images/roemeensevlag2.jpg);
     min-height: 550px;
@@ -94,6 +96,9 @@ h1{
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* Einde Index Pagina */
+/* Begin About Pagina */
 
 .about {
     display: flex;
@@ -129,6 +134,9 @@ h1{
     text-align: center;
 }
 
+/* Einde About Pagina */
+/* Begin Cultuur Pagina */
+
 .cultuur {
     display: flex;
     margin-left: 5rem;
@@ -154,6 +162,9 @@ h1{
 .cultuur p{
     margin-bottom: 1rem;
 }
+
+/* Einde Cultuur Pagina */
+/* Begin Bezienswaardigheden Pagina */
 
 .bezienswaardigheden{
     display: flex;
@@ -195,14 +206,15 @@ h1{
     position: relative;
   }
 
-  .bezcontainer:hover .beztekst {
+.bezcontainer:hover .beztekst {
     opacity: 1;
-  }
+}
 
-  .bezcontainer h2 {
+.bezcontainer h2 {
     text-align: center;
-  }
+}
 
+/* Einde Bezienswaardigheden */
 /* Einde van Main */
 
 /* Begin van Footer */
